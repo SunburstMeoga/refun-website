@@ -38,22 +38,23 @@
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+        </div>
     </div>
     <!-- Spinner End -->
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-primary text-white d-none d-lg-flex">
+    <!-- <div class="container-fluid bg-primary text-white d-none d-lg-flex">
         <div class="container py-3">
             <div class="d-flex align-items-center">
                 <a href="index.html">
                     <h2 class="text-white fw-bold m-0"><img src="img/Refun.svg" width="150" height="60"></h2>
                 </a>
                 <div class="ms-auto d-flex align-items-center">
-                    <!-- <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</small>
+                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</small>
                     <small class="ms-4"><i class="fa fa-envelope me-3"></i>info@example.com</small>
-                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</small> -->
+                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</small>
                     <div class="ms-3 d-flex">
                         <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
                                 class="fab fa-facebook-f"></i></a>
@@ -65,12 +66,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Topbar End -->
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid bg-white sticky-top">
+    <!-- <div class="container-fluid bg-white sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
                 <a href="index.html" class="navbar-brand d-lg-none">
@@ -96,17 +97,18 @@
                                 <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
-                        <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="ms-auto d-none d-lg-block">
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Get A Quote</a>
+                        <a href="" data-i18n="home.Connect Wallet" class="btn btn-primary rounded-pill py-2 px-3">Get A
+                            Quote</a>
                     </div>
                 </div>
             </nav>
         </div>
-    </div>
+    </div> -->
     <!-- Navbar End -->
-
+    <div id="header"></div>
 
     <!-- Carousel Start -->
     <div class="container-fluid px-0 mb-5">
@@ -118,13 +120,14 @@
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-lg-7 text-start">
-                                    <p class="fs-4 text-white animated slideInRight">Welcome to <strong>Refun</strong>
+                                    <p class="fs-4 text-white animated slideInRight" data-i18n="Welcome">Welcome to
+                                        <strong data-i18n="Brand Name">Refun</strong>
                                     </p>
-                                    <h1 class="display-1 text-white mb-4 animated slideInRight">Empowering Your
-                                        Marketing with AI-driven Strategies</h1>
-                                    <a href=""
-                                        class="btn btn-primary rounded-pill py-3 px-5 animated slideInRight">Explore
-                                        More</a>
+                                    <h1 class="display-1 text-white mb-4 animated slideInRight"
+                                        data-i18n="Empowering Marketing">Empowering Your Marketing with AI-driven
+                                        Strategies</h1>
+                                    <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInRight"
+                                        data-i18n="Explore More">Explore More</a>
                                 </div>
                             </div>
                         </div>
@@ -136,13 +139,13 @@
                         <div class="container">
                             <div class="row justify-content-end">
                                 <div class="col-lg-7 text-end">
-                                    <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>Refun</strong>
+                                    <p class="fs-4 text-white animated slideInLeft" data-i18n="Welcome">Welcome to
+                                        <strong data-i18n="Brand Name">Refun</strong>
                                     </p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInLeft">AI-Powered Solutions for
-                                        Unmatched Business Growth</h1>
-                                    <a href=""
-                                        class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Explore
-                                        More</a>
+                                    <h1 class="display-1 text-white mb-5 animated slideInLeft" data-i18n="AI Solutions">
+                                        AI-Powered Solutions for Unmatched Business Growth</h1>
+                                    <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft"
+                                        data-i18n="Explore More">Explore More</a>
                                 </div>
                             </div>
                         </div>
@@ -151,14 +154,15 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden" data-i18n="Previous">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden" data-i18n="Next">Next</span>
             </button>
         </div>
     </div>
+
     <!-- Carousel End -->
 
 
@@ -171,9 +175,11 @@
                         <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
                             <img class="img-fluid" src="img/icon/icon-1.png" alt="Icon">
                         </div>
-                        <h5 class="mb-3">Award-Winning AI Marketing Solutions</h5>
-                        <p class="mb-0">Our cutting-edge AI strategies have helped clients win in competitive markets.
-                        </p>
+                        <h5 class="mb-3" data-i18n="Award-Winning AI Marketing Solutions">Award-Winning AI Marketing
+                            Solutions</h5>
+                        <p class="mb-0"
+                            data-i18n="Our cutting-edge AI strategies have helped clients win in competitive markets.">
+                            Our cutting-edge AI strategies have helped clients win in competitive markets.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
@@ -181,9 +187,11 @@
                         <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
                             <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon">
                         </div>
-                        <h5 class="mb-3">AI Experts and Marketing Strategists</h5>
-                        <p class="mb-0">Our team combines deep AI knowledge with marketing expertise to deliver results.
-                        </p>
+                        <h5 class="mb-3" data-i18n="AI Experts and Marketing Strategists">AI Experts and Marketing
+                            Strategists</h5>
+                        <p class="mb-0"
+                            data-i18n="Our team combines deep AI knowledge with marketing expertise to deliver results.">
+                            Our team combines deep AI knowledge with marketing expertise to deliver results.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
@@ -191,9 +199,11 @@
                         <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
                             <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
                         </div>
-                        <h5 class="mb-3">Affordable AI Marketing for Every Business</h5>
-                        <p class="mb-0">High-impact marketing strategies powered by AI, at a price that fits your
-                            budget.</p>
+                        <h5 class="mb-3" data-i18n="Affordable AI Marketing for Every Business">Affordable AI Marketing
+                            for Every Business</h5>
+                        <p class="mb-0"
+                            data-i18n="High-impact marketing strategies powered by AI, at a price that fits your budget.">
+                            High-impact marketing strategies powered by AI, at a price that fits your budget.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
@@ -201,14 +211,16 @@
                         <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
                             <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon">
                         </div>
-                        <h5 class="mb-3">24/7 AI-Driven Support<br><br></h5>
-                        <p class="mb-0">Get round-the-clock support with AI-enabled insights to optimize your marketing.
-                        </p>
+                        <h5 class="mb-3" data-i18n="24/7 AI-Driven Support">24/7 AI-Driven Support<br><br></h5>
+                        <p class="mb-0"
+                            data-i18n="Get round-the-clock support with AI-enabled insights to optimize your marketing.">
+                            Get round-the-clock support with AI-enabled insights to optimize your marketing.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Features End -->
 
 
@@ -226,31 +238,41 @@
                 </div>
                 <div class="col-lg-6 pt-lg-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="bg-white rounded-top p-5 mt-lg-5">
-                        <p class="fs-5 fw-medium text-primary">About Us</p>
-                        <h1 class="display-6 mb-4">Leading the Future of Marketing with AI Innovation</h1>
-                        <p class="mb-4">We are at the forefront of using artificial intelligence to create marketing
-                            strategies that drive real business growth. By combining data, creativity, and AI
-                            technology, we offer custom-tailored solutions for every client.</p>
+                        <p class="fs-5 fw-medium text-primary" data-i18n="About Us">About Us</p>
+                        <h1 class="display-6 mb-4" data-i18n="Leading the Future of Marketing with AI Innovation">
+                            Leading the Future of Marketing with AI Innovation</h1>
+                        <p class="mb-4"
+                            data-i18n="We are at the forefront of using artificial intelligence to create marketing strategies that drive real business growth. By combining data, creativity, and AI technology, we offer custom-tailored solutions for every client.">
+                            We are at the forefront of using artificial intelligence to create marketing strategies that
+                            drive real business growth. By combining data, creativity, and AI technology, we offer
+                            custom-tailored solutions for every client.</p>
                         <div class="row g-5 pt-2 mb-5">
                             <div class="col-sm-6" style="height: auto;">
                                 <img class="img-fluid mb-4" src="img/icon/icon-5.png" alt="">
-                                <h5 class="mb-3">AI-Enhanced Managed Services</h5>
-                                <span>We offer fully managed AI-driven marketing solutions, ensuring your campaigns are
+                                <h5 class="mb-3" data-i18n="AI-Enhanced Managed Services">AI-Enhanced Managed Services
+                                </h5>
+                                <span
+                                    data-i18n="We offer fully managed AI-driven marketing solutions, ensuring your campaigns are optimized and running smoothly at all times.">We
+                                    offer fully managed AI-driven marketing solutions, ensuring your campaigns are
                                     optimized and running smoothly at all times.</span>
                             </div>
                             <div class="col-sm-6" style="height: auto;">
                                 <img class="img-fluid mb-4" src="img/icon/icon-2.png" alt="">
-                                <h5 class="mb-3">Dedicated AI Experts<br><br></h5>
-                                <span>Our team of AI specialists is dedicated to providing personalized strategies that
-                                    fit your business goals and maximize results.</span>
+                                <h5 class="mb-3" data-i18n="Dedicated AI Experts">Dedicated AI Experts<br><br></h5>
+                                <span
+                                    data-i18n="Our team of AI specialists is dedicated to providing personalized strategies that fit your business goals and maximize results.">Our
+                                    team of AI specialists is dedicated to providing personalized strategies that fit
+                                    your business goals and maximize results.</span>
                             </div>
                         </div>
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Explore More</a>
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="" data-i18n="Explore More">Explore
+                            More</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- About End -->
 
 
@@ -260,7 +282,7 @@
         <div class="modal-dialog">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <h3 class="modal-title" id="exampleModalLabel" data-i18n="Youtube Video">Youtube Video</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -273,6 +295,7 @@
             </div>
         </div>
     </div>
+
     <!-- Video Modal End -->
 
 
@@ -280,8 +303,9 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Our Services</p>
-                <h1 class="display-5 mb-5">Transform Your Marketing with AI-Powered Solutions</h1>
+                <p class="fs-5 fw-medium text-primary" data-i18n="Our Services">Our Services</p>
+                <h1 class="display-5 mb-5" data-i18n="Transform Your Marketing with AI-Powered Solutions">Transform Your
+                    Marketing with AI-Powered Solutions</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -291,12 +315,14 @@
                                 style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">AI-Driven Digital Marketing</h4>
-                                <p class="mb-0">Utilize data-driven insights powered by AI to optimize your digital
-                                    marketing campaigns and enhance customer engagement.</p>
+                            <h5 class="mb-3" data-i18n="AI-Driven Digital Marketing">AI-Driven Digital Marketing</h5>
+                            <p class="mb-0"
+                                data-i18n="Utilize data-driven insights powered by AI to optimize your digital marketing campaigns and enhance customer engagement.">
+                                Utilize data-driven insights powered by AI to optimize your digital marketing campaigns
+                                and enhance customer engagement.</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i
+                            <a class="text-primary fw-medium" href="" data-i18n="Read More">Read More<i
                                     class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
@@ -308,12 +334,15 @@
                                 style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">AI-Powered Internet Marketing</h4>
-                                <p class="mb-0">Leverage artificial intelligence to deliver targeted internet marketing
-                                    strategies that drive traffic and conversion.</p>
+                            <h5 class="mb-3" data-i18n="AI-Powered Internet Marketing">AI-Powered Internet Marketing
+                            </h5>
+                            <p class="mb-0"
+                                data-i18n="Leverage artificial intelligence to deliver targeted internet marketing strategies that drive traffic and conversion.">
+                                Leverage artificial intelligence to deliver targeted internet marketing strategies that
+                                drive traffic and conversion.</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i
+                            <a class="text-primary fw-medium" href="" data-i18n="Read More">Read More<i
                                     class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
@@ -325,12 +354,15 @@
                                 style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="img/icon/icon-7.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">AI-Optimized Content Marketing</h4>
-                                <p class="mb-0">Create and distribute AI-enhanced content that resonates with your
-                                    audience and boosts your brand's visibility.</p>
+                            <h5 class="mb-3" data-i18n="AI-Optimized Content Marketing">AI-Optimized Content Marketing
+                            </h5>
+                            <p class="mb-0"
+                                data-i18n="Create and distribute AI-enhanced content that resonates with your audience and boosts your brand's visibility.">
+                                Create and distribute AI-enhanced content that resonates with your audience and boosts
+                                your brand's visibility.</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i
+                            <a class="text-primary fw-medium" href="" data-i18n="Read More">Read More<i
                                     class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
@@ -342,12 +374,15 @@
                                 style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="img/icon/icon-8.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">AI-Driven Social Media Marketing</h4>
-                                <p class="mb-0">Maximize engagement and reach with AI-powered social media strategies
-                                    tailored to your brand's voice.<br><br></p>
+                            <h5 class="mb-3" data-i18n="AI-Driven Social Media Marketing">AI-Driven Social Media
+                                Marketing</h5>
+                            <p class="mb-0"
+                                data-i18n="Maximize engagement and reach with AI-powered social media strategies tailored to your brand's voice.">
+                                Maximize engagement and reach with AI-powered social media strategies tailored to your
+                                brand's voice.<br><br></p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i
+                            <a class="text-primary fw-medium" href="" data-i18n="Read More">Read More<i
                                     class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
@@ -359,12 +394,14 @@
                                 style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="img/icon/icon-9.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">AI for B2B Marketing</h4>
-                                <p class="mb-0">Deploy AI strategies to streamline B2B marketing efforts, increase lead
-                                    generation, and improve client engagement.</p>
+                            <h5 class="mb-3" data-i18n="AI for B2B Marketing">AI for B2B Marketing</h5>
+                            <p class="mb-0"
+                                data-i18n="Deploy AI strategies to streamline B2B marketing efforts, increase lead generation, and improve client engagement.">
+                                Deploy AI strategies to streamline B2B marketing efforts, increase lead generation, and
+                                improve client engagement.</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i
+                            <a class="text-primary fw-medium" href="" data-i18n="Read More">Read More<i
                                     class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
@@ -376,12 +413,14 @@
                                 style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="img/icon/icon-10.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">AI-Enhanced E-mail Marketing</h4>
-                                <p class="mb-0">Optimize your e-mail campaigns with AI, ensuring personalized content
-                                    that drives higher open rates and conversions.</p>
+                            <h5 class="mb-3" data-i18n="AI-Enhanced E-mail Marketing">AI-Enhanced E-mail Marketing</h5>
+                            <p class="mb-0"
+                                data-i18n="Optimize your e-mail campaigns with AI, ensuring personalized content that drives higher open rates and conversions.">
+                                Optimize your e-mail campaigns with AI, ensuring personalized content that drives higher
+                                open rates and conversions.</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i
+                            <a class="text-primary fw-medium" href="" data-i18n="Read More">Read More<i
                                     class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
@@ -389,6 +428,7 @@
             </div>
         </div>
     </div>
+
     <!-- Service End -->
 
 
@@ -397,8 +437,9 @@
         <div class="container">
             <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
                 style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Our Projects</p>
-                <h1 class="display-5 mb-5">AI-Powered Projects that Drive Results</h1>
+                <p class="fs-5 fw-medium text-primary" data-i18n="Our Projects">Our Projects</p>
+                <h1 class="display-5 mb-5" data-i18n="AI-Powered Projects that Drive Results">AI-Powered Projects that
+                    Drive Results</h1>
             </div>
             <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="project-item mb-5">
@@ -412,9 +453,11 @@
                         </div>
                     </div>
                     <div class="p-4">
-                        <a class="d-block h5" href="">AI-Driven Data Analytics & Insights</a>
-                        <span>Transform data into actionable insights using AI to improve marketing
-                            decisions.<br><br></span>
+                        <a class="d-block h5" href="" data-i18n="AI-Driven Data Analytics & Insights">AI-Driven Data
+                            Analytics & Insights</a>
+                        <span
+                            data-i18n="Transform data into actionable insights using AI to improve marketing decisions.">Transform
+                            data into actionable insights using AI to improve marketing decisions.<br><br></span>
                     </div>
                 </div>
                 <div class="project-item mb-5">
@@ -428,9 +471,11 @@
                         </div>
                     </div>
                     <div class="p-4">
-                        <a class="d-block h5" href="">AI-Powered Content Strategy</a>
-                        <span>Leverage AI to create content that resonates with your audience and boosts
-                            engagement.</span>
+                        <a class="d-block h5" href="" data-i18n="AI-Powered Content Strategy">AI-Powered Content
+                            Strategy</a>
+                        <span
+                            data-i18n="Leverage AI to create content that resonates with your audience and boosts engagement.">Leverage
+                            AI to create content that resonates with your audience and boosts engagement.</span>
                     </div>
                 </div>
                 <div class="project-item mb-5">
@@ -444,9 +489,11 @@
                         </div>
                     </div>
                     <div class="p-4">
-                        <a class="d-block h5" href="">Target Market Analysis with AI</a>
-                        <span>AI-powered tools to identify and target the right market segments for your
-                            business.<br><br></span>
+                        <a class="d-block h5" href="" data-i18n="Target Market Analysis with AI">Target Market Analysis
+                            with AI</a>
+                        <span
+                            data-i18n="AI-powered tools to identify and target the right market segments for your business.">AI-powered
+                            tools to identify and target the right market segments for your business.<br><br></span>
                     </div>
                 </div>
                 <div class="project-item mb-5">
@@ -460,13 +507,17 @@
                         </div>
                     </div>
                     <div class="p-4">
-                        <a class="d-block h5" href="">AI-Powered Social Marketing Strategy</a>
-                        <span>Boost social media engagement and conversions with AI-optimized campaigns.<br><br></span>
+                        <a class="d-block h5" href="" data-i18n="AI-Powered Social Marketing Strategy">AI-Powered Social
+                            Marketing Strategy</a>
+                        <span
+                            data-i18n="Boost social media engagement and conversions with AI-optimized campaigns.">Boost
+                            social media engagement and conversions with AI-optimized campaigns.<br><br></span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Project End -->
 
 
@@ -475,13 +526,17 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-medium text-primary">Get A Quote</p>
-                    <h1 class="display-5 mb-4">Need AI-Powered Marketing Solutions? We're Here to Help!</h1>
-                    <p>Our AI-driven strategies are designed to optimize your marketing efforts, delivering personalized
-                        and data-driven solutions to grow your business.</p>
-                    <p class="mb-4">Let us provide you with expert guidance and innovative solutions that leverage AI to
-                        transform your marketing and drive results. Get in touch with us today to explore how we can
-                        help.</p>
+                    <p class="fs-5 fw-medium text-primary" data-i18n="Get A Quote">Get A Quote</p>
+                    <h1 class="display-5 mb-4" data-i18n="Need AI-Powered Marketing Solutions? We're Here to Help!">Need
+                        AI-Powered Marketing Solutions? We're Here to Help!</h1>
+                    <p
+                        data-i18n="Our AI-driven strategies are designed to optimize your marketing efforts, delivering personalized and data-driven solutions to grow your business.">
+                        Our AI-driven strategies are designed to optimize your marketing efforts, delivering
+                        personalized and data-driven solutions to grow your business.</p>
+                    <p class="mb-4"
+                        data-i18n="Let us provide you with expert guidance and innovative solutions that leverage AI to transform your marketing and drive results. Get in touch with us today to explore how we can help.">
+                        Let us provide you with expert guidance and innovative solutions that leverage AI to transform
+                        your marketing and drive results. Get in touch with us today to explore how we can help.</p>
                     <a class="d-inline-flex align-items-center rounded overflow-hidden border border-primary" href="">
                         <!-- <span class="btn-lg-square bg-primary" style="width: 55px; height: 55px;">
                             <i class="fa fa-phone-alt text-white"></i>
@@ -490,52 +545,57 @@
                     </a>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <h2 class="mb-4">Get A Free Quote</h2>
+                    <h2 class="mb-4" data-i18n="Get A Free Quote">Get A Free Quote</h2>
                     <div class="row g-3">
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name"
+                                    data-i18n="[placeholder]Your Name">
+                                <label for="name" data-i18n="Your Name">Your Name</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="mail" placeholder="Your Email">
-                                <label for="mail">Your Email</label>
+                                <input type="email" class="form-control" id="mail" placeholder="Your Email"
+                                    data-i18n="[placeholder]Your Email">
+                                <label for="mail" data-i18n="Your Email">Your Email</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
-                                <label for="mobile">Your Mobile</label>
+                                <input type="text" class="form-control" id="mobile" placeholder="Your Mobile"
+                                    data-i18n="[placeholder]Your Mobile">
+                                <label for="mobile" data-i18n="Your Mobile">Your Mobile</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <select class="form-select" id="service">
-                                    <option selected>Digital Marketing</option>
-                                    <option value="">Social Marketing</option>
-                                    <option value="">Content Marketing</option>
-                                    <option value="">E-mail Marketing</option>
+                                <select class="form-select" id="service" data-i18n="[placeholder]Choose A Service">
+                                    <option selected data-i18n="Digital Marketing">Digital Marketing</option>
+                                    <option value="" data-i18n="Social Marketing">Social Marketing</option>
+                                    <option value="" data-i18n="Content Marketing">Content Marketing</option>
+                                    <option value="" data-i18n="E-mail Marketing">E-mail Marketing</option>
                                 </select>
-                                <label for="service">Choose A Service</label>
+                                <label for="service" data-i18n="Choose A Service">Choose A Service</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
                                 <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                    style="height: 130px"></textarea>
-                                <label for="message">Message</label>
+                                    style="height: 130px" data-i18n="[placeholder]Leave a message here"></textarea>
+                                <label for="message" data-i18n="Message">Message</label>
                             </div>
                         </div>
                         <div class="col-12 text-center">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
+                            <button class="btn btn-primary w-100 py-3" type="submit" data-i18n="Submit Now">Submit
+                                Now</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Quote Start -->
 
 
@@ -543,15 +603,16 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Our Team</p>
-                <h1 class="display-5 mb-5">Our Expert People Ready to Help You</h1>
+                <p class="fs-5 fw-medium text-primary" data-i18n="Our Team">Our Team</p>
+                <h1 class="display-5 mb-5" data-i18n="Our Expert People Ready to Help You">Our Expert People Ready to
+                    Help You</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded overflow-hidden pb-4" style="overflow:hidden">
                         <img class="img-fluid mb-4" src="img/team-1.jpg" alt="" style="object-fit:contain">
-                        <h5>Alex Robin</h5>
-                        <span class="text-primary">Founder & CEO</span>
+                        <h5 data-i18n="Alex Robin">Alex Robin</h5>
+                        <span class="text-primary" data-i18n="Founder & CEO">Founder & CEO</span>
                         <ul class="team-social">
                             <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
                             <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
@@ -563,8 +624,8 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item rounded overflow-hidden pb-4">
                         <img class="img-fluid mb-4" src="img/team-2.jpg" alt="">
-                        <h5>Adam Crew</h5>
-                        <span class="text-primary">Co Founder</span>
+                        <h5 data-i18n="Adam Crew">Adam Crew</h5>
+                        <span class="text-primary" data-i18n="Co Founder">Co Founder</span>
                         <ul class="team-social">
                             <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
                             <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
@@ -576,8 +637,8 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item rounded overflow-hidden pb-4">
                         <img class="img-fluid mb-4" src="img/test.jpeg" alt="">
-                        <h5>Boris Johnson</h5>
-                        <span class="text-primary">Executive Manager</span>
+                        <h5 data-i18n="Boris Johnson">Boris Johnson</h5>
+                        <span class="text-primary" data-i18n="Executive Manager">Executive Manager</span>
                         <ul class="team-social">
                             <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
                             <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
@@ -589,8 +650,8 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item rounded overflow-hidden pb-4" style="overflow:hidden">
                         <img class="img-fluid mb-4" src="img/team-4.jpg" alt="" style="object-fit:contain">
-                        <h5>Robert Jordan</h5>
-                        <span class="text-primary">Digital Marketer</span>
+                        <h5 data-i18n="Robert Jordan">Robert Jordan</h5>
+                        <span class="text-primary" data-i18n="Digital Marketer">Digital Marketer</span>
                         <ul class="team-social">
                             <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
                             <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
@@ -602,6 +663,7 @@
             </div>
         </div>
     </div>
+
     <!-- Team End -->
 
 
@@ -610,111 +672,51 @@
         <div class="container">
             <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
                 style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Testimonials</p>
-                <h1 class="display-5 mb-5">What Our Clients Say About Our AI-Driven Marketing!</h1>
+                <p class="fs-5 fw-medium text-primary" data-i18n="Testimonials">Testimonials</p>
+                <h1 class="display-5 mb-5" data-i18n="What Our Clients Say About Our AI-Driven Marketing!">What Our
+                    Clients Say About Our AI-Driven Marketing!</h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
                     <img class="mb-4" src="img/testimonial-1.jpg" alt="">
-                    <p class="mb-4">The AI-powered strategies have significantly improved our marketing results. We saw
-                        a boost in customer engagement and conversions, thanks to their innovative approach.</p>
-                    <h5>John Doe</h5>
-                    <span class="text-primary">Marketing Director</span>
+                    <p class="mb-4" data-i18n="AI Marketing Results 1">The AI-powered strategies have significantly
+                        improved our marketing results. We saw a boost in customer engagement and conversions, thanks to
+                        their innovative approach.</p>
+                    <h5 data-i18n="John Doe">John Doe</h5>
+                    <span class="text-primary" data-i18n="Marketing Director">Marketing Director</span>
                 </div>
                 <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
                     <img class="mb-4" src="img/testimonial-2.jpg" alt="">
-                    <p class="mb-4">Their AI solutions helped us optimize our campaigns in real-time, leading to more
-                        effective targeting and increased ROI. Highly recommend their services!</p>
-                    <h5>Jane Smith</h5>
-                    <span class="text-primary">CEO</span>
+                    <p class="mb-4" data-i18n="AI Marketing Results 2">Their AI solutions helped us optimize our
+                        campaigns in real-time, leading to more effective targeting and increased ROI. Highly recommend
+                        their services!</p>
+                    <h5 data-i18n="Jane Smith">Jane Smith</h5>
+                    <span class="text-primary" data-i18n="CEO">CEO</span>
                 </div>
                 <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
                     <img class="mb-4" src="img/testimonial-3.jpg" alt="">
-                    <p class="mb-4">Working with their AI experts transformed the way we approach digital marketing. We
-                        now have data-driven insights that allow us to make smarter decisions.</p>
-                    <h5>Emily Johnson</h5>
-                    <span class="text-primary">Business Owner</span>
+                    <p class="mb-4" data-i18n="AI Marketing Results 3">Working with their AI experts transformed the way
+                        we approach digital marketing. We now have data-driven insights that allow us to make smarter
+                        decisions.</p>
+                    <h5 data-i18n="Emily Johnson">Emily Johnson</h5>
+                    <span class="text-primary" data-i18n="Business Owner">Business Owner</span>
                 </div>
                 <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
                     <img class="mb-4" src="img/testimonial-4.jpg" alt="">
-                    <p class="mb-4">Their AI-driven marketing solutions helped us expand our reach and engage with our
-                        target audience more effectively than ever before.<br><br></p>
-                    <h5>Michael Lee</h5>
-                    <span class="text-primary">Marketing Manager</span>
+                    <p class="mb-4" data-i18n="AI Marketing Results 4">Their AI-driven marketing solutions helped us
+                        expand our reach and engage with our target audience more effectively than ever before.<br><br>
+                    </p>
+                    <h5 data-i18n="Michael Lee">Michael Lee</h5>
+                    <span class="text-primary" data-i18n="Marketing Manager">Marketing Manager</span>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Testimonial End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <!-- <h4 class="text-white mb-4">Our Office</h4> -->
-                    <!-- <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p> -->
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Business Hours</h4>
-                    <p class="mb-1">Monday - Friday</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6>
-                </div> -->
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-medium text-light" href="#">Refun</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!-- <a class="fw-medium text-light" target="_blank" href="http://www.mobanwang.com/" title="模板王">模板王</a> -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Copyright End -->
+    <div id="footer"></div>
 
 
     <!-- Back to Top -->
