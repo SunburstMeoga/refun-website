@@ -54,6 +54,43 @@
         }
     });
 
+    // Web3.js集成
+    // 动态加载 Web3.js 库
+    $.getScript("https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.5.2/dist/web3.min.js", function () {
+        let web3;
+
+        // 初始化 Web3
+        if (typeof window.ethereum !== 'undefined') {
+            web3 = new Web3(window.ethereum);
+
+            // 连接钱包按钮点击事件
+            $('#wallet-connect-btn').click(async function () {
+                try {
+                    // 请求用户授权连接钱包
+                    const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+                    const walletAddress = accounts[0];
+
+                    // 将钱包地址显示在按钮上
+                    $('#wallet-connect-btn').text(walletAddress.substring(0, 6) + '...' + walletAddress.substring(walletAddress.length - 4));
+                } catch (error) {
+                    console.error("User denied wallet connection", error);
+                }
+            });
+
+            // 监听钱包账户更改
+            ethereum.on('accountsChanged', function (accounts) {
+                if (accounts.length > 0) {
+                    const walletAddress = accounts[0];
+                    $('#wallet-connect-btn').text(walletAddress.substring(0, 6) + '...' + walletAddress.substring(walletAddress.length - 4));
+                } else {
+                    $('#wallet-connect-btn').text("Connect Wallet");
+                }
+            });
+        } else {
+            console.error("No Web3 provider found. Please install MetaMask.");
+        }
+    });
+
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -94,7 +131,6 @@
     $('.btn-play').click(function () {
         $videoSrc = $(this).data("src");
     });
-    console.log($videoSrc);
     $('#videoModal').on('shown.bs.modal', function (e) {
         $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
     });
