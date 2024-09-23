@@ -33,9 +33,20 @@
                     <a href="index.html" class="navbar-brand d-lg-none">
                         <h1 class="fw-bold m-0" data-i18n="Brand Name">Refun</h1>
                     </a>
+                    <!-- 切换语言按钮 -->
+                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" id="lang-toggle">
+                        <span class="fas fa-language"></span>
+                    </button>
+                    <!-- 钱包按钮 -->
                     <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="fas fa-wallet"></span>
+                    </button>
+                    <!-- 菜单按钮 -->
+                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="fas fa-bars"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav">
@@ -56,7 +67,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ms-auto d-none d-lg-block">
+                        <div class="ms-auto d-lg-block d-none">
                             <a href="" data-i18n="Connect Wallet" class="btn btn-primary rounded-pill py-2 px-3">Connect
                                 Wallet</a>
                         </div>
