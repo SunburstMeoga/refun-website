@@ -66,17 +66,20 @@
         loadLanguage(currentLang);
         // 点击多语言图标切换语言
         $('#lang-toggle').click(function () {
+            console.log($('#lang-toggle'))
             currentLang = currentLang === 'en' ? 'cn' : 'en'; // 在英文和中文之间切换
             localStorage.setItem('selectedLanguage', currentLang); // 将选择的语言存储到 localStorage
             loadLanguage(currentLang);
         });
         $('#lang-toggle-btn').click(function () {
+            console.log($('#lang-toggle-btn'))
             currentLang = currentLang === 'en' ? 'cn' : 'en'; // 在英文和中文之间切换
             localStorage.setItem('selectedLanguage', currentLang); // 将选择的语言存储到 localStorage
             loadLanguage(currentLang);
         });
         // 加载并初始化对应的语言资源
         function loadLanguage(lang) {
+            console.log(lang)
             $.getJSON(resources[lang], function (data) {
                 i18next.init({
                     lng: lang, // 设置当前语言
