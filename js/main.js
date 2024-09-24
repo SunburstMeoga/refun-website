@@ -51,7 +51,53 @@
         }
     });
 
-    // 其他已有代码...
+    // 从 localStorage 获取上次选择的语言，如果没有则根据浏览器语言选择
+    let currentLang = localStorage.getItem('selectedLanguage') || (navigator.language.startsWith('zh') ? 'cn' : 'en');
+    // 动态加载 i18next 库
+    $.getScript("https://unpkg.com/i18next@21.8.10/dist/umd/i18next.min.js", function () {
+        // 语言资源加载
+        const resources = {
+            en: '/locales/en.json',
+            cn: '/locales/cn.json'
+        };
+        // 加载当前语言的 JSON 文件
+        loadLanguage(currentLang);
+        // 点击多语言图标切换语言
+        $('#lang-toggle').click(function () {
+            currentLang = currentLang === 'en' ? 'cn' : 'en'; // 在英文和中文之间切换
+            localStorage.setItem('selectedLanguage', currentLang); // 将选择的语言存储到 localStorage
+            loadLanguage(currentLang);
+        });
+        // 加载并初始化对应的语言资源
+        function loadLanguage(lang) {
+            $.getJSON(resources[lang], function (data) {
+                i18next.init({
+                    lng: lang, // 设置当前语言
+                    debug: true, // 打开调试模式
+                    resources: {
+                        [lang]: {
+                            translation: data
+                        }
+                    }
+                }, function (err, t) {
+                    if (err) {
+                        console.error('Language initialization error:', err);
+                        return;
+                    }
+                    updateContent(); // 更新页面内容
+                });
+            }).fail(function () {
+                console.error('Failed to load language resource file:', resources[lang]);
+            });
+        }
+        // 替换页面上的所有 data-i18n 元素
+        function updateContent() {
+            $('[data-i18n]').each(function () {
+                const key = $(this).attr('data-i18n');
+                $(this).text(i18next.t(key));
+            });
+        }
+    });
     // Spinner
     var spinner = function () {
         setTimeout(function () {
