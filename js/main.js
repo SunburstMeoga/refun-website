@@ -52,8 +52,8 @@
     });
 
     // 从 localStorage 获取上次选择的语言，如果没有则根据浏览器语言选择
-    // let currentLang = localStorage.getItem('selectedLanguage') || (navigator.language.startsWith('zh') ? 'cn' : 'en');
-    let currentLang = localStorage.getItem('selectedLanguage') || 'en';
+    let currentLang = localStorage.getItem('selectedLanguage') || (navigator.language.startsWith('zh') ? 'cn' : 'en');
+    // let currentLang = localStorage.getItem('selectedLanguage') || 'en';
 
     // 动态加载 i18next 库
     $.getScript("https://unpkg.com/i18next@21.8.10/dist/umd/i18next.min.js", function () {
@@ -65,7 +65,12 @@
         // 加载当前语言的 JSON 文件
         loadLanguage(currentLang);
         // 点击多语言图标切换语言
-        $('.lang-toggle').click(function () {
+        $('#lang-toggle').click(function () {
+            currentLang = currentLang === 'en' ? 'cn' : 'en'; // 在英文和中文之间切换
+            localStorage.setItem('selectedLanguage', currentLang); // 将选择的语言存储到 localStorage
+            loadLanguage(currentLang);
+        });
+        $('#lang-toggle-btn').click(function () {
             currentLang = currentLang === 'en' ? 'cn' : 'en'; // 在英文和中文之间切换
             localStorage.setItem('selectedLanguage', currentLang); // 将选择的语言存储到 localStorage
             loadLanguage(currentLang);
