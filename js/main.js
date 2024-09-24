@@ -29,7 +29,7 @@
         }
 
         // 连接钱包函数
-        $('#wallet-connect').click(async function () {
+        $('.wallet-connect').click(async function () {
             try {
                 const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
                 const account = accounts[0];
@@ -44,9 +44,9 @@
         function updateWalletButton(account) {
             if (account) {
                 const displayAddress = account.slice(0, 6) + "..." + account.slice(-4);
-                $('#wallet-connect').text(displayAddress);
+                $('.wallet-connect').text(displayAddress);
             } else {
-                $('#wallet-connect').text("Connect Wallet");
+                $('.wallet-connect').text("Connect Wallet");
             }
         }
     });
@@ -63,7 +63,7 @@
         // 加载当前语言的 JSON 文件
         loadLanguage(currentLang);
         // 点击多语言图标切换语言
-        $('#lang-toggle').click(function () {
+        $('.lang-toggle').click(function () {
             currentLang = currentLang === 'en' ? 'cn' : 'en'; // 在英文和中文之间切换
             localStorage.setItem('selectedLanguage', currentLang); // 将选择的语言存储到 localStorage
             loadLanguage(currentLang);
