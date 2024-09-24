@@ -52,7 +52,9 @@
     });
 
     // 从 localStorage 获取上次选择的语言，如果没有则根据浏览器语言选择
-    let currentLang = localStorage.getItem('selectedLanguage') || (navigator.language.startsWith('zh') ? 'cn' : 'en');
+    // let currentLang = localStorage.getItem('selectedLanguage') || (navigator.language.startsWith('zh') ? 'cn' : 'en');
+    let currentLang = localStorage.getItem('selectedLanguage') || 'en';
+
     // 动态加载 i18next 库
     $.getScript("https://unpkg.com/i18next@21.8.10/dist/umd/i18next.min.js", function () {
         // 语言资源加载
